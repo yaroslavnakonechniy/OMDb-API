@@ -1,0 +1,80 @@
+
+.container{
+    margin: 0 auto;
+    width: 1440px;
+}
+.visited-movies{
+    text-align: center;
+    display: none;
+}
+.failed{
+    color: red;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header{
+    padding: 10px;
+    text-align: center;
+    background-color: #3e3e3e;
+
+    &__title{
+        color: white;
+    }
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+    &__card{
+        width: 300px;
+        padding: 20px;
+        margin: 0 2px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
+
+    &__detailes{
+        width: 100%;
+    }
+}
+
+.visited-movies{
+    &__title{
+        text-align: center;
+        display: none;
+    }
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    &__card {
+        width: 100px;
+        height: 150px;
+        font-size: 12px;
+        overflow: hidden;
+        margin: 10px;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    &__card img{
+        width: 100px;
+        height: 100px;
+    }
+}
