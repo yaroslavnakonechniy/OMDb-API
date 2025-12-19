@@ -1,6 +1,5 @@
 import { handlerMovieClick } from '../ui/renderMovies.js';
-
-const moviesContainer = document.getElementById('movies');
+import { moviesContainer } from '../main.js';
 
 const viewedMovie = [];
 const visitedMovieContainer = document.getElementById('visited-movies__container');

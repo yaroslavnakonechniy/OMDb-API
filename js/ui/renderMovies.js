@@ -9,10 +9,6 @@ function renderMovies(movies) {
     movies.forEach(movie => {
         const cardOfMovie = createMovieCard(movie);
         moviesContainer.append(cardOfMovie);
-
-        cardOfMovie.addEventListener('click', async () => {
-            await handlerMovieClick(movie.imdbID);
-        });
     });
 }
 
