@@ -1,0 +1,22 @@
+{
+  "name": "home-work-31",
+  "version": "1.0.0",
+  "description": "A small web application for real-time movie search using the external OMDb API.\r Supports Live Search, viewing movie details, and history of watched movies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^7.1.2",
+    "gulp": "^5.0.1",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.1.0",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.97.0"
+  }
+}

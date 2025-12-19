@@ -1,0 +1,20 @@
+{
+    "format": {
+        "indent": {
+            "style": "    ",
+            "width": 4
+        },
+        "lineBreak": {
+            "after": {
+                "block": "\n",
+                "rule": "\n",
+                "atRule": "\n"
+            }
+        }
+    },
+    "sort": [
+        "custom-properties",
+        "declarations",
+        "rules"
+    ]
+}
