@@ -1,5 +1,5 @@
 import { getMovieData } from './api/api.js';
-import { renderMovies } from './ui/renderMovies.js';
+import { renderMovies, handlerMovieClick } from './ui/renderMovies.js';
 
 export const API_KEY = '30f62d0c'; //const API_KEY = 'YOUR_API_KEY';
 export const moviesContainer = document.getElementById('movies');
@@ -13,7 +13,7 @@ inputElement.addEventListener('input', async (event) => {
     if(inputValue !== '' && inputValue.length > 3) {
         const movies = await getMovieData(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${inputValue}`);
 
-        if(movies) {
+        if(movies?.Search?.length) {
             renderMovies(movies.Search);
         } else {
             moviesContainer.innerHTML = '<p class="failed">No movies found!</p>'
@@ -24,3 +24,19 @@ inputElement.addEventListener('input', async (event) => {
         return;
     } 
 });
+
+movieEvents();
+
+function movieEvents() {
+        moviesContainer.addEventListener('click', async (event) => {
+        const movieCard = event.target.closest('.movies__card');
+
+        if (!movieCard) {
+            return;
+        }
+
+        const movieID = movieCard.dataset.id;
+            
+        await handlerMovieClick(movieID);
+    });
+}
