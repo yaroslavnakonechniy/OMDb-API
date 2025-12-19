@@ -42,3 +42,13 @@ Usage:
     Results appear automatically (Live Search)
     Click on a movie card to view detailed information
     Viewed movies are stored and rendered separately
+
+Gulp settings:
+    To install gulp locally into our project:
+        npm install --save-dev gulp 
+
+    To install the required packages run:
+        npm install --save-dev gulp-sass gulp-postcss autoprefixer cssnano browser-sync gulp-rename gulp-csscomb  
+
+    The gulp command is used to run tasks defined in your gulpfile.js:
+        gulp

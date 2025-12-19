@@ -17,7 +17,7 @@
 .header {
   padding: 10px;
   text-align: center;
-  background-color: #3e3e3e;
+  background-color: #a3269d;
 }
 .header__title {
   color: white;
@@ -68,4 +68,4 @@
 .visited-movies__card img {
   width: 100px;
   height: 100px;
-}/*# sourceMappingURL=main.css.map */
+}
